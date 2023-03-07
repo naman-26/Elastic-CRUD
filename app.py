@@ -1,8 +1,10 @@
 from datetime import datetime
 from flask import Flask, jsonify, request
 from elasticsearch import Elasticsearch
+import logging
 
 es = Elasticsearch(hosts=['http://127.0.0.1:9200/'])
+logging.basicConfig(filename='record.log', level=logging.DEBUG)
 
 app = Flask(__name__)
 
@@ -32,10 +34,10 @@ def insert_data():
 
     search_body={
         "query": {
-    "match": {
-      "blogNo": blogNo
-    }
-    } 
+            "match": {
+                "blogNo": blogNo
+                }
+            } 
     }
     res=es.search(index="blogs", body=search_body)
     if res['hits']['hits']:
@@ -67,10 +69,10 @@ def update_data():
 
     search_body={
         "query": {
-    "match": {
-      "blogNo": blogNo
-    }
-    } 
+            "match": {
+                "blogNo": blogNo
+            }
+        } 
     }
     res=es.search(index="blogs", body=search_body)
     if not res['hits']['hits']:
@@ -98,10 +100,10 @@ def search():
     field=request.form['field']
     body = {
         "query": {
-    "match": {
-      field: keyword
-    }
-  }
+            "match": {
+                field: keyword
+            }
+        }
     }
 
     res = es.search(index="blogs", body=body)
@@ -125,10 +127,10 @@ def delete_data():
 
     search_body={
         "query": {
-                    "match":{   
-                                "blogNo": blogNo
-                            }
-                 } 
+                "match":{   
+                    "blogNo": blogNo
+                }
+            } 
         }
     res=es.search(index="blogs", body=search_body)
     if  not res['hits']['hits']:
