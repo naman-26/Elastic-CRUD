@@ -1,0 +1,17 @@
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:20:44] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:20:56] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:21:26] "POST /insert_data HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:40:04] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:40:50] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:40:50] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:40:50] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:40:51] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:40:51] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:40:52] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:42:32] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:42:33] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:42:34] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:42:35] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:46:15] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:46:40] "GET /search_all HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [07/Mar/2023 23:46:42] "GET /search_all HTTP/1.1" 200 -
