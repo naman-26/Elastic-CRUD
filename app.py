@@ -4,7 +4,7 @@ from elasticsearch import Elasticsearch
 import logging
 
 es = Elasticsearch(hosts=['http://127.0.0.1:9200/'])
-logging.basicConfig(filename='record.log', level=logging.DEBUG)
+logging.basicConfig(filename='record.log', level=logging.WARNING)
 
 app = Flask(__name__)
 
