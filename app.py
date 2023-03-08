@@ -10,12 +10,13 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-     return ''' PATHs: 
-                       1)for insert : "/insert_data"
-                       2)for update : "/update_data"
-                       3)for delete : "/delete_data"
-                       4)for search : "/search"
-                       5)for searching all data : "/search_all"'''
+    print(request.json)
+    return ''' PATHs: 
+                    1)for insert : "/insert_data"
+                    2)for update : "/update_data"
+                    3)for delete : "/delete_data"
+                    4)for search : "/search"
+                    5)for searching all data : "/search_all"'''
 
 
 if __name__ == "main":
@@ -36,8 +37,8 @@ def insert_data():
         "query": {
             "match": {
                 "blogNo": blogNo
-                }
-            } 
+            }
+        } 
     }
     res=es.search(index="blogs", body=search_body)
     if res['hits']['hits']:
