@@ -407,3 +407,103 @@
 10/03/2023 06:23:51 : app : INFO :Success : 83.193.195.41: GET : /search : Safari/6.0 : 200
 10/03/2023 06:23:55 : app : INFO :Success : 240.153.163.232: GET : /search : Chrome/4.0 : 200
 10/03/2023 06:23:57 : app : INFO :Success : 143.69.195.221: GET : /search : Safari/6.0 : 200
+10/03/2023 06:30:51 : app : INFO :Success : 78.236.246.4: GET : /search : Brave/2.0 : 200
+10/03/2023 06:30:51 : app : INFO :Success : 143.69.195.221: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:30:52 : app : INFO :Success : 27.3.69.168: GET : /search : Safari/6.0 : 200
+10/03/2023 06:30:52 : app : INFO :Success : 128.211.159.43: GET : /search : Brave/2.0 : 200
+10/03/2023 06:30:57 : app : INFO :Success : 83.193.195.41: GET : /search : Brave/2.0 : 200
+10/03/2023 06:30:57 : app : INFO :Success : 145.163.133.131: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:30:58 : app : INFO :Success : 172.124.188.86: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:30:59 : app : INFO :Success : 228.59.31.64: GET : /search : Brave/2.0 : 200
+10/03/2023 06:30:59 : app : INFO :Success : 216.243.32.44: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:00 : app : INFO :Success : 128.211.159.43: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:00 : app : INFO :Success : 216.186.101.147: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:01 : app : INFO :Success : 5.60.83.253: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:01 : app : INFO :Success : 168.82.208.200: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:01 : app : INFO :Success : 162.197.79.242: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:02 : app : INFO :Success : 45.181.58.59: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:02 : app : INFO :Success : 165.248.188.228: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:03 : app : INFO :Success : 61.200.149.154: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:04 : app : INFO :Success : 172.107.70.71: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:05 : app : INFO :Success : 216.243.32.44: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:05 : app : INFO :Success : 162.197.79.242: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:06 : app : INFO :Success : 78.236.246.4: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:08 : app : ERROR :Bad Request : 157.62.221.78: GET : /search : Mozilla/5.0 : 400
+10/03/2023 06:31:10 : app : ERROR :Bad Request : 225.106.112.103: GET : /search : Mozilla/5.0 : 400
+10/03/2023 06:31:11 : app : ERROR :Bad Request : 61.200.149.154: GET : /search : Safari/6.0 : 400
+10/03/2023 06:31:11 : app : ERROR :Bad Request : 144.123.104.164: GET : /search : Safari/6.0 : 400
+10/03/2023 06:31:12 : app : ERROR :Bad Request : 172.107.70.71: GET : /search : Brave/2.0 : 400
+10/03/2023 06:31:12 : app : ERROR :Bad Request : 61.200.149.154: GET : /search : Safari/6.0 : 400
+10/03/2023 06:31:12 : app : ERROR :Bad Request : 216.186.101.147: GET : /search : Chrome/4.0 : 400
+10/03/2023 06:31:13 : app : ERROR :Bad Request : 162.197.79.242: GET : /search : Safari/6.0 : 400
+10/03/2023 06:31:13 : app : ERROR :Bad Request : 172.124.188.86: GET : /search : Postman/7.1 : 400
+10/03/2023 06:31:16 : app : ERROR :Wrong Method : 61.200.149.154: POST : /search : Postman/7.1 : 405
+10/03/2023 06:31:16 : app : ERROR :Wrong Method : 95.100.141.198: POST : /search : Chrome/4.0 : 405
+10/03/2023 06:31:17 : app : ERROR :Wrong Method : 95.100.141.198: POST : /search : Brave/2.0 : 405
+10/03/2023 06:31:17 : app : ERROR :Wrong Method : 168.82.208.200: POST : /search : Safari/6.0 : 405
+10/03/2023 06:31:17 : app : ERROR :Wrong Method : 165.248.188.228: POST : /search : Mozilla/5.0 : 405
+10/03/2023 06:31:22 : app : ERROR :Bad Request : 165.248.188.228: GET : /search : Postman/7.1 : 400
+10/03/2023 06:31:22 : app : ERROR :Bad Request : 165.248.188.228: GET : /search : Mozilla/5.0 : 400
+10/03/2023 06:31:22 : app : ERROR :Bad Request : 172.124.188.86: GET : /search : Mozilla/5.0 : 400
+10/03/2023 06:31:23 : app : ERROR :Bad Request : 77.23.210.216: GET : /search : Safari/6.0 : 400
+10/03/2023 06:31:26 : app : INFO :Success : 240.153.163.232: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:27 : app : INFO :Success : 105.80.3.225: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:27 : app : INFO :Success : 163.130.184.8: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:27 : app : INFO :Success : 01.189.164.182: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:28 : app : INFO :Success : 45.181.58.59: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:28 : app : INFO :Success : 239.137.78.5: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:28 : app : INFO :Success : 34.106.142.227: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:29 : app : INFO :Success : 45.181.58.59: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:31 : app : INFO :Success : 225.106.112.103: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:40 : app : INFO :Success : 105.80.3.225: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:41 : app : INFO :Success : 95.100.141.198: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:41 : app : INFO :Success : 168.82.208.200: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:42 : app : INFO :Success : 109.39.81.94: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:42 : app : INFO :Success : 162.197.79.242: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:43 : app : INFO :Success : 240.153.163.232: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:43 : app : INFO :Success : 225.106.112.103: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:44 : app : INFO :Success : 168.82.208.200: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:44 : app : INFO :Success : 162.197.79.242: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:45 : app : INFO :Success : 225.106.112.103: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:45 : app : INFO :Success : 128.211.159.43: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:45 : app : INFO :Success : 68.205.137.143: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:46 : app : INFO :Success : 95.100.141.198: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:46 : app : INFO :Success : 240.153.163.232: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:46 : app : INFO :Success : 228.160.135.72: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:47 : app : INFO :Success : 172.107.70.71: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:48 : app : INFO :Success : 145.163.133.131: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:48 : app : INFO :Success : 216.243.32.44: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:49 : app : INFO :Success : 45.181.58.59: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:49 : app : INFO :Success : 216.186.101.147: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:49 : app : INFO :Success : 216.243.32.44: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:50 : app : INFO :Success : 144.123.104.164: GET : /search : Brave/2.0 : 200
+10/03/2023 06:31:50 : app : INFO :Success : 145.163.133.131: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:50 : app : INFO :Success : 168.82.208.200: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:51 : app : INFO :Success : 240.153.163.232: GET : /search : Chrome/4.0 : 200
+10/03/2023 06:31:52 : app : INFO :Success : 34.117.247.80: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:52 : app : INFO :Success : 27.3.69.168: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:53 : app : INFO :Success : 83.193.195.41: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:53 : app : INFO :Success : 34.106.142.227: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:54 : app : INFO :Success : 145.163.133.131: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:54 : app : INFO :Success : 216.243.32.44: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:55 : app : INFO :Success : 105.80.3.225: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:56 : app : INFO :Success : 91.231.240.165: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:31:57 : app : INFO :Success : 209.155.130.34: GET : /search : Postman/7.1 : 200
+10/03/2023 06:31:58 : app : INFO :Success : 238.224.39.26: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:58 : app : INFO :Success : 239.137.78.5: GET : /search : Safari/6.0 : 200
+10/03/2023 06:31:59 : app : INFO :Success : 165.248.188.228: GET : /search : Mozilla/5.0 : 200
+10/03/2023 06:32:01 : app : INFO :Success : 78.236.246.4: GET : /search : Postman/7.1 : 200
+10/03/2023 06:32:01 : app : INFO :Success : 45.181.58.59: GET : /search : Brave/2.0 : 200
+10/03/2023 06:32:02 : app : INFO :Success : 142.9.203.143: GET : /search : Safari/6.0 : 200
+10/03/2023 06:32:12 : app : INFO :Success : 34.106.142.227: GET : /search_all : Brave/2.0 : 200
+10/03/2023 06:32:16 : app : INFO :Success : 95.100.141.198: GET : /search_all : Chrome/4.0 : 200
+10/03/2023 06:32:17 : app : INFO :Success : 240.153.163.232: GET : /search_all : Postman/7.1 : 200
+10/03/2023 06:32:18 : app : INFO :Success : 162.197.79.242: GET : /search_all : Safari/6.0 : 200
+10/03/2023 06:32:18 : app : INFO :Success : 01.189.164.182: GET : /search_all : Mozilla/5.0 : 200
+10/03/2023 06:32:19 : app : INFO :Success : 12.70.54.214: GET : /search_all : Mozilla/5.0 : 200
+10/03/2023 06:32:19 : app : INFO :Success : 95.100.141.198: GET : /search_all : Mozilla/5.0 : 200
+10/03/2023 06:32:19 : app : INFO :Success : 45.181.58.59: GET : /search_all : Mozilla/5.0 : 200
+10/03/2023 06:32:24 : app : INFO :Success : 225.106.112.103: GET : /search_all : Chrome/4.0 : 200
+10/03/2023 06:32:25 : app : INFO :Success : 143.69.195.221: GET : /search_all : Mozilla/5.0 : 200
+10/03/2023 06:32:26 : app : INFO :Success : 95.100.141.198: GET : /search_all : Mozilla/5.0 : 200
+10/03/2023 06:32:30 : app : INFO :Success : 77.23.210.216: GET : /search_all : Chrome/4.0 : 200
