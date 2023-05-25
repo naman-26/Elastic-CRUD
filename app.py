@@ -41,7 +41,7 @@ def home():
                         5)for searching all data : "/search_all"'''
     else:
         logger.error("-",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"405","method":request.method})
-        return "BAD REQUEST"
+        return "BAD REQUEST",405
     
 if __name__ == "main":
     app.run(port=5000,debug=True)
@@ -54,7 +54,7 @@ def insert_data():
     if(request.method =='POST' or request.method == 'PUT'):
         if not request.form:
             logger.error("Bad Request",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"400","method":request.method})
-            return "Body Required"
+            return "Body Required",400
         else:
             title = request.form['title']
             author = request.form['author']
@@ -71,7 +71,7 @@ def insert_data():
             res=es.search(index="blogs", body=search_body)
             if res['hits']['hits']:
                 logger.error("Bad Request",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"400","method":request.method})
-                return "Insert not possible data already exist\n Are you trying to update? (use /update_data)"
+                return "Insert not possible data already exist\n Are you trying to update? (use /update_data)",400
             else:
                 insert_body = {
                     'blogNo' : blogNo,
@@ -83,10 +83,10 @@ def insert_data():
                 }
                 result = es.index(index='blogs', id=blogNo, body=insert_body)
                 logger.info("Success",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"200","method":request.method})
-                return str(result)
+                return str(result),200
     else:
         logger.error("Wrong Method",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"405","method":request.method})
-        return "Wrong Method"
+        return "Wrong Method",400
     
 
 # Update
@@ -95,7 +95,7 @@ def update_data():
     if request.method == 'POST' or request.method == 'PUT':
         if not request.form:
             logger.error("Bad Request",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"400","method":request.method})
-            return "Body Required"
+            return "Body Required",400
         else:
             title = request.form['title']
             author= request.form['author']
@@ -112,7 +112,7 @@ def update_data():
             res=es.search(index="blogs", body=search_body)
             if not res['hits']['hits']:
                 logger.error("Bad Request",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"400","method":request.method})
-                return "update not possible data does not exist"
+                return "update not possible data does not exist",400
             else:
                 update_body = {
                     'blogNo' : blogNo,
@@ -124,10 +124,10 @@ def update_data():
                 }
                 result = es.index(index='blogs', id=blogNo, body=update_body)
                 logger.info("Success",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"200","method":request.method})
-                return str(result)
+                return str(result),200
     else:
         logger.error("Wrong Method",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"405","method":request.method})
-        return "Wrong Method"
+        return "Wrong Method",405
     
 
 # Search
@@ -136,7 +136,7 @@ def search():
     if request.method == 'GET':
         if not request.form:
             logger.error("Bad Request",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"400","method":request.method})
-            return "Search Field Required"
+            return "Search Field Required",400
         else:
             keyword = request.form['keyword']
             field=request.form['field']
@@ -149,10 +149,10 @@ def search():
             }
             res = es.search(index="blogs", body=body)
             logger.info("Success",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"200","method":request.method})
-            return str(res['hits']['hits'])
+            return str(res['hits']['hits']),200
     else:
         logger.error("Wrong Method",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"405","method":request.method})
-        return "Wrong Method"
+        return "Wrong Method",405
     
 
 # Search_all
@@ -161,10 +161,10 @@ def search_all():
     if request.method == 'GET':
         res = es.search(index="blogs")
         logger.info("Success",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"200","method":request.method})
-        return str(res)
+        return str(res),200
     else:
         logger.error("Wrong Method",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"405","method":request.method})
-        return "Wrong Method"
+        return "Wrong Method",405
     
 
 # Delete
@@ -173,25 +173,25 @@ def delete_data():
     if request.method == 'DELETE':
         if not request.form:
             logger.error("Bad Request",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"400","method":request.method})
-            return "Id Field Required"
+            return "Id Field Required",400
         else:
             blogNo= int(request.form['blogNo'])
             search_body={
                 "query": {
-                            "match":{
-                                        "blogNo": blogNo
-                                    }
-                        }
+                    "match":{
+                        "blogNo": blogNo
+                    }
                 }
+            }
             res=es.search(index="blogs", body=search_body)
             if  not res['hits']['hits']:
                 logger.error("Bad Request",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"400","method":request.method})
-                return "delete not possible data does not exist"
+                return "delete not possible data does not exist",400
             else:
                 result = es.delete(index='blogs', id=blogNo)
                 logger.info("Success",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"200","method":request.method})
-                return str(result)
+                return str(result),200
     else:
         logger.error("Wrong Method",extra={'Ip':getIp(),"endpoint_url":'/'+str(request.endpoint),"user_agent":str(getUserAgent()),"Status":"405","method":request.method})
-        return "Wrong Method"
+        return "Wrong Method",405
 
